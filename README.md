@@ -34,7 +34,7 @@ docker build -t <some-fency-name> .
 ```
 - Run docker container
 ```
-docker run -it --name <name-of-container> <some-fency-name>
+docker run -it --name <name-of-container> <some-fancy-name>
 ```
 - To stop
 ```
