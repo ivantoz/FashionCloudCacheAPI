@@ -28,8 +28,6 @@ const getAll = async (req, res) => {
 
 const get = async (req, res) => {
   const { key } = req.params
-  console.log('key ==>',key)
-
   let cacheEntry = await CacheModel.findOne({
     key
   })

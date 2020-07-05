@@ -31,10 +31,11 @@ async function dropAllCollections() {
 module.exports = {
     setupDB(databaseName) {
         // Connect to Mongoose
-        beforeAll(async () => {
-            const url = `mongodb://127.0.0.1/${databaseName}`;
-            await mongoose.connect(url, { useNewUrlParser: true });
-        });
+        // before(async () => {
+        //
+        //     const url = `mongodb://127.0.0.1/${databaseName}`;
+        //     await mongoose.connect(url, { useNewUrlParser: true });
+        // });
 
         // Cleans up database between each test
         afterEach(async () => {
@@ -42,7 +43,7 @@ module.exports = {
         });
 
         // Disconnect Mongoose
-        afterAll(async () => {
+        after(async () => {
             await dropAllCollections();
             await mongoose.connection.close();
         });

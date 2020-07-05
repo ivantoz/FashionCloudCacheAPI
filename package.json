@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node ./src/bin/www",
     "watch": "nodemon ./src/bin/www",
-    "test": "NODE_ENV=test node_modules/.bin/mocha ./src/test/**/*.js --exit",
+    "test": "NODE_ENV=test MONGO_URL='mongodb://localhost:27017/fashion-cloud-api-testdb' node_modules/.bin/mocha ./src/test/**/*.js --exit",
     "lint": "node_modules/.bin/eslint './src/**/*.js' --ignore-path .eslintignore"
   },
   "keywords": [
