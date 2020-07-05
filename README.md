@@ -1,7 +1,5 @@
-# node-api-starter
-A starter template for nodejs-expressjs-mongodb api
-
-[![Build Status](https://travis-ci.org/iqans/node-api-starter.svg?branch=master)](https://travis-ci.org/iqans/node-api-starter)
+# Fashion Cloud Cache API
+REST API that exposes methods to interact with a cache. Build with Node.js and Express.js and MongoDB to store the cache data. 
 
 ## Pre-requisites
 - NodeJS
